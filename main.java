@@ -9,23 +9,32 @@
 // <n> is odd
 // <n> is even
 // --------------------------------------------------------------
-boolean odd;
 
 // (TO COMPLETE)
+public class main{
+  public static void main(String[] args)
+  {
+    int n;
+    boolean odd;
 
+    System.out.print("Input an integer: ");
+    //Scanner creation and ask for an integer
+    java.util.Scanner UserInput = new java.util.Scanner(System.in);
+    n = UserInput.nextInt();
 
-
-
-
-
-
-
-
-
-
-
+    //Checks if n is odd or even
+    if((double)n % 2 == 0)
+    {
+      odd = false;    //If even
+    }
+    else
+    {
+      odd = true;   // If odd
+    }
 // (MUST KEEP THESE LINES)
-if(odd)
-  System.out.println(n + " is odd");
-else
-  System.out.println(n + " is even");
+    if(odd)
+      System.out.println(n + " is odd");
+    else
+      System.out.println(n + " is even");
+  }
+}
